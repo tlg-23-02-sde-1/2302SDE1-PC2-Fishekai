@@ -6,18 +6,14 @@ import java.util.Random;
 public class NPC extends Character {
     private String location;
     private String type;
-    private String[] randomQuotes;
-
     // constructors
     public NPC(String name) {
         super(name);
     }
 
-    public NPC(String name, String description, String location, String type, String[] randomQuotes) {
+    public NPC(String name, String description, String location, String type) {
         super(name, description);
         this.location = location;
-        this.type = type;
-        this.randomQuotes = randomQuotes;
     }
 
     public String getLocation() {
@@ -34,11 +30,6 @@ public class NPC extends Character {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public String[] getRandomQuotes() {
-        System.out.println("testing");
-        return randomQuotes;
     }
 
     // methods
